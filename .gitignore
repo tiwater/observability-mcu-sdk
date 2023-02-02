@@ -61,3 +61,7 @@ sdkrepo/
 
 # python cache
 __pycache__
+
+build
+/examples/mbedtls
+/examples/modus
