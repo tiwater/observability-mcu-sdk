@@ -42,7 +42,7 @@ TICOS SDK 可以直接添加到你的存储库中。 结构通常看起来像：
 ```
 <YOUR_PROJECT>
 ├── third_party/ticos
-│               ├── ticos-firmware-sdk (submodule)
+│               ├── observability-mcu-sdk (submodule)
 │               │
 │               │ # 平台移植需要实现的文件
 │               ├── ticos_platform_port.c
@@ -58,7 +58,7 @@ TICOS SDK 可以直接添加到你的存储库中。 结构通常看起来像：
 你可以使用 `git`，将 Ticos SDK 添加到项目中作为子模块：
 
 ```
-$ git submodule add https://github.com/tiwater/observability-mcu-sdk.git $YOUR_PROJECT/third_party/ticos/ticos-firmware-sdk
+$ git submodule add https://github.com/tiwater/observability-mcu-sdk.git $YOUR_PROJECT/third_party/ticos/observability-mcu-sdk
 ```
 
 这使得跟踪Ticos SDK的历史变化变得更加容易。你不需要对Ticos SDK做任何更改。更新的一般流程如下:
@@ -126,4 +126,4 @@ SDK 代码受到单元测试的全面覆盖。它们可以在 `tests/` 文件夹
 
 # 许可证
 
-除非特别在文件中指出，否则 ticos-mcu-sdk 中的所有文件均根据 ticos 许可证授权。 （[examples](/examples) 和 [ports](/ports) 目录中的一些文件根据供应商的要求，会有许可证上的差别。）
+除非特别在文件中指出，否则 observability-mcu-sdk 中的所有文件均根据 ticos 许可证授权。 （[examples](/examples) 和 [ports](/ports) 目录中的一些文件根据供应商的要求，会有许可证上的差别。）
