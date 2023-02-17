@@ -80,17 +80,17 @@ An API key will need to be configured for Ticos HTTP client to communicate
 with Ticos's web services. Go to https://app.ticos.com/, navigate to the
 project you want to use and select 'Settings'. Copy the 'Project Key', and
 configure it; either by running `idf.py menuconfig` and setting the
-`TICOS_PROJECT_KEY` config value, or by inserting to `sdkconfig.defaults`:
+`TICOS_OB_PROJECT_KEY` config value, or by inserting to `sdkconfig.defaults`:
 
 ```kconfig
-CONFIG_TICOS_PROJECT_KEY="<YOUR PROJECT KEY>"
+CONFIG_TICOS_OB_PROJECT_KEY="<YOUR PROJECT KEY>"
 ```
 
 > Note: when doing a clean build, or a build in CI, another option is to place
 > the Project Key in a second `sdkconfig.defaults` file, for example:
 >
 > ```bash
-> ❯ echo CONFIG_TICOS_PROJECT_KEY=\"<YOUR PROJECT KEY>\" > sdkconfig.extra
+> ❯ echo CONFIG_TICOS_OB_PROJECT_KEY=\"<YOUR PROJECT KEY>\" > sdkconfig.extra
 > ❯ idf.py build -DSDKCONFIG_DEFAULTS="sdkconfig.defaults;sdkconfig.extra"
 > ```
 

@@ -36,7 +36,7 @@
 
 #include "ticos/components.h"
 
-#if !defined(TICOS_PROJECT_KEY)
+#if !defined(TICOS_OB_PROJECT_KEY)
 #error "Ticos Project Key not configured. Please visit https://goto.ticos.com/create-key/da1469x"
 #endif
 
@@ -264,7 +264,7 @@ static void prv_handle_read_req(ble_service_t *svc,
     value = uri;
     length = total_length;
   } else if (evt->handle == mds->auth_h) {
-    value = "Ticos-Project-Key:"TICOS_PROJECT_KEY;
+    value = "Ticos-Project-Key:"TICOS_OB_PROJECT_KEY;
     length = strlen(value);
   } else if (evt->handle == mds->device_id_h) {
     ticos_platform_get_device_info(&info);

@@ -31,12 +31,12 @@
 #define TICOS_DEVICE_INFO_URL_ENCODED_MAX_LEN (48)
 #endif
 
-TICOS_STATIC_ASSERT(sizeof(CONFIG_TICOS_PROJECT_KEY) > 1,
+TICOS_STATIC_ASSERT(sizeof(CONFIG_TICOS_OB_PROJECT_KEY) > 1,
                        "Ticos Project Key not configured. Please visit https://ticos.io/project-key "
-                       "and add CONFIG_TICOS_PROJECT_KEY=\"YOUR_KEY\" to sdkconfig.defaults");
+                       "and add CONFIG_TICOS_OB_PROJECT_KEY=\"YOUR_KEY\" to sdkconfig.defaults");
 static char _buff[1024];
 sTcsHttpClientConfig g_tcs_http_client_config = {
-  .api_key = CONFIG_TICOS_PROJECT_KEY,
+  .api_key = CONFIG_TICOS_OB_PROJECT_KEY,
   // .chunks_api = { .host = "api.ticos.cn", .port = 80 },
   // .chunks_api = { .host = "api.dev.ticos.cc", .port = 80 },
   .disable_tls = true,

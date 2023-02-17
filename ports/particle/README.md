@@ -43,7 +43,7 @@ $ git submodule add https://github.com/ticos/particle-firmware-library lib/ticos
    https://goto.ticos.com/create-key/particle and copy it to your clipboard.
 
 3. Navigate to the Integrations tab in the Particle Cloud UI and create a new
-   "Custom Template" webhook. Be sure to replace `TICOS_PROJECT_KEY` below
+   "Custom Template" webhook. Be sure to replace `TICOS_OB_PROJECT_KEY` below
    with the one copied in step 2.
 
    ```json
@@ -55,7 +55,7 @@ $ git submodule add https://github.com/ticos/particle-firmware-library lib/ticos
      "noDefaults": false,
      "rejectUnauthorized": true,
      "headers": {
-       "Ticos-Project-Key": "TICOS_PROJECT_KEY",
+       "Ticos-Project-Key": "TICOS_OB_PROJECT_KEY",
        "Content-Type": "application/octet-stream",
        "Content-Encoding": "base64"
      },

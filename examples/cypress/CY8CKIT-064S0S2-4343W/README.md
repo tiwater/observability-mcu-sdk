@@ -60,7 +60,7 @@ In `demos/include/aws_clientcredential.h`, you'll have to type in:
   `awscli` in the
   [first steps in FreeRTOS document](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-prereqs.html).
 - `clientcredentialIOT_THING_NAME` - AWS IoT Thing name.
-- `clientcredentialTICOS_PROJECT_KEY` - Ticos project key, find it in the
+- `clientcredentialTICOS_OB_PROJECT_KEY` - Ticos project key, find it in the
   [Ticos dashboard](https://app.ticos.com) under "Settings"
 - `clientcredentialWIFI_SSID` - Wifi SSID string.
 - `clientcredentialWIFI_PASSWORD` - Wifi password.

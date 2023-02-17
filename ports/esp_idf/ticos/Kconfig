@@ -1,6 +1,6 @@
 menu "Ticos"
 
-    config TICOS_PROJECT_KEY
+    config TICOS_OB_PROJECT_KEY
         string "Ticos Project key"
         default ""
         help

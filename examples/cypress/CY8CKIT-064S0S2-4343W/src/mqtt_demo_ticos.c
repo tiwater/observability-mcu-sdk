@@ -173,12 +173,12 @@
  * @brief The topic to subscribe and publish to in the example.
  *
  * Contains fingerprint and project key for forwarding to ticos:
- *   prod/<board>/<device_id>/ticos/<ticos_project_key>/chunk
+ *   prod/<board>/<device_id>/ticos/<ticos_project_ob_key>/chunk
  */
 #define mqttexampleTOPIC \
     "prod/psoc64/" democonfigCLIENT_IDENTIFIER \
     "/ticos" \
-    "/" clientcredentialTICOS_PROJECT_KEY \
+    "/" clientcredentialTICOS_PROJECT_OB_KEY \
     "/chunk"
 #define mqttforwardTOPIC "device/" democonfigCLIENT_IDENTIFIER "/forward"
 
